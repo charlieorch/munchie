@@ -8,13 +8,15 @@
   
   .Business .image-container {
     height: 16.66rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10%;
   }
   
   .Business h2 {
     margin-bottom: .5rem;
     font-size: 1.2rem;
     font-weight: 600;
+    text-align: center;
   }
   
   .Business-information {

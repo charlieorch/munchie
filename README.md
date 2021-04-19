@@ -1,6 +1,7 @@
 # Munchie
 
 A web application built on React.js that searches for restaurants in a specified location based on type of business using the Yelp API.
+
 Before using, start a live demo server for requesting API data on Heroku by following this link and clicking the button: 
 
 https://cors-anywhere.herokuapp.com/corsdemo 

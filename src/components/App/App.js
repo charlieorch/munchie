@@ -1,8 +1,9 @@
-import React from "react";
-import "./App.css";
-import BusinessList from "../BusinessList/BusinessList";
-import SearchBar from "../SearchBar/SearchBar";
-import Yelp from "../../util/Yelp";
+import React from 'react';
+import './App.css';
+import BusinessList from '../BusinessList/BusinessList';
+import SearchBar from '../SearchBar/SearchBar';
+import Yelp from '../../util/Yelp';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +16,8 @@ class App extends React.Component {
   }
 
   searchYelp(term, location, sortBy) {
-    Yelp.search(term, location, sortBy).then((businesses) => {
+    Yelp.search(term, location, sortBy)
+    .then((businesses) => {
       this.setState({ businesses: businesses });
     });
   }
@@ -25,7 +27,7 @@ class App extends React.Component {
       <div class="App">
         <h1>Munchie</h1>
         <SearchBar searchYelp={this.searchYelp} />
-        <BusinessList businesses={this.state.businesses} />
+        <BusinessList businesses={this.state.businesses}/> 
       </div>
     );
   }

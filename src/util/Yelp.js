@@ -4,7 +4,7 @@ const apiKey = 'VsyqYIWsJftaarAVK2-zbR9zmuqlYq9R2k6IWvNsfeOjijCE95iO6gFbkmug8KYx
 
 const Yelp = {
     async search(term, location, sortBy) {
-        const response = await fetch(`https://private-cors-server.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
+        const response = await fetch(`https://cors.bridged.cc/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
             {
                 headers: {
                     Authorization: `Bearer ${apiKey}`
